@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button{
+    width: 24%;
+    background: purple;
+}
+
+.book{
+    font-style: italic;;
+}
+
+#topLeft{
+    border: 2px solid rebeccapurple;
+}
+
+
+/* Universal stylying for all columns regardless of screen width */
+.col{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* Universal stylying for all rows regardless of screen width */
+.row{
+    padding: 10px;
+    border: 3px solid blue;
+}
+
+
+/* Styling for rows depending on screen width */
+/* Smart-phones. I changed to 580 since 480 not working on laptop browser */
+@media only screen and (max-width: 580px){
+    .s-4{
+        width: 100%;
+    }
+    .s-0{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 581px){
+    .m2{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .l1{
+        width: 25%;
+    }
+    .l3{
+        width: 75%;
+    }
+}
