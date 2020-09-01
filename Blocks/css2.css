@@ -1,0 +1,154 @@
+/*CSS reset settings here*/
+
+#wrapper{
+    width: 100%;
+    background-color: rgb(191, 161, 161);
+    margin: 0px auto;
+    border: 2px solid black;
+}
+
+#header{
+    margin: 20px;
+    height: 100px;
+    background-color: green;
+    padding:20px;
+    text-align: center;
+}
+
+#lower-wrapper{
+    margin: 2px;
+}
+
+#navigation{
+    margin: 20px;
+    min-height: 400px;
+    width: 200px;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main_content{
+    margin-top: 20px;
+    margin-right: 20px;
+    min-height: 400px;
+    width: 680px;
+    background-color: red;
+    display: inline-block;
+}
+
+#content-wrapper{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.subcontents{
+    margin: 10px 10px;
+    height: 195px;
+    width: 195px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+#advertisement{
+    margin: 10px 10px;
+    height: 120px;
+    background-color: purple;
+}
+
+@media only screen and (max-width: 500px){
+    #wrapper{
+        width: 90%;
+    }
+
+    #header{
+        max-width: 82%;
+    }
+
+    #navigation{
+        display: none;
+    }
+
+    #main_content{
+        margin-left: 20px;
+        max-width: 90%;
+    }
+
+    #content-wrapper{
+        max-width: 94%;
+    }
+
+    .subcontents{
+        min-width: 95%;
+        max-height: 10%;
+    }
+
+    #advertisement{
+        max-width: 95%;
+        max-height: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+    #header{
+        width: 90%;
+    }
+
+    #navigation{
+        display: none;
+    }
+
+    #main_content{
+        margin-left: 20px;
+        width: 95%;
+    }
+
+    #content-wrapper{
+        width: 100%;
+    }
+
+    .subcontents{
+        width: 46%;
+        height: 7em;
+        display: inline-block;
+    }
+
+    #advertisement{
+        max-width: 95%;
+        max-height: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+    #header{
+        width: 90%;
+    }
+
+    #navigation{
+        display: inline-block;
+    }
+
+    #main_content{
+        margin-left: 20px;
+        width: 75%;
+    }
+
+    #content-wrapper{
+        width: 80%;
+    }
+
+    .subcontents{
+        width: 30%;
+        height: 10em;
+        display: inline-block;
+    }
+
+    #advertisement{
+        max-width: 95%;
+        max-height: 10%;
+    }
+
+}
